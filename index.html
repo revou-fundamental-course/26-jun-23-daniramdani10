@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>E-Groceries</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- navigation bar  -->
+      <div class="navbar">
+        <div>
+          <a
+            ><img src="./img/revoU-logo.png" alt="logo-revou" class="logo"
+          /></a>
+        </div>
+        <div class="navigate">
+          <a onclick="scrollToBanner()">HOME</a>
+          <a onclick="scrollToOurPackage()">OUR PACKAGE</a>
+          <a onclick="srollToCallUs()">CALL US</a>
+        </div>
+      </div>
+      <!-- title content  -->
+      <div class="main-title">
+        <p class="title">Top Rated E-Groceries Shop in Indonesian</p>
+        <p class="desc">Every Day with best ingredients</p>
+      </div>
+      <!-- konten and contact us  -->
+      <div class="wrapper">
+        <div class="imgg" id="targetHome">
+          <img src="./img/img-1.jpg" alt="Gambar-1" class="img-slider" />
+          <img src="./img/img-2.jpg" alt="Gambar-2" class="img-slider" />
+          <img src="./img/img-3.jpg" alt="Gambar-3" class="img-slider" />
+        </div>
+        <div class="card">
+          <p class="text-1">Contact Us</p>
+          <p class="text-2">Your Name</p>
+          <input
+            type="text"
+            placeholder="First and last name"
+            class="input-field"
+            id="name"
+          />
+          <p class="text-2">Email Address</p>
+          <input
+            type="text"
+            placeholder="Example@gmail.com"
+            class="input-field"
+            id="email"
+          />
+          <p class="text-2">What are you interested in?</p>
+          <select name="interest" id="selectOption" class="input-field">
+            <option value="" disabled selected>--Select Option--</option>
+            <option value="Vegetable">Vegetable</option>
+            <option value="Fruits">Fruits</option>
+            <option value="Kitchen Set">Kitchen Set</option>
+          </select>
+          <button class="btn-primary" onclick="send()">SEND</button>
+          <p class="text-3">
+            <i>Sales will contact you 1x24 hours after we receive the data</i>
+          </p>
+        </div>
+      </div>
+      <!-- buy safe  -->
+      <div class="wrapper column pd-30">
+        <p class="title">
+          Buy Fresh Fruits and vegetables Online? Using E-Groceries is Safe!
+        </p>
+        <p class="text-2 pd-30">
+          Now it feels easier to buy all the needs without having to bother
+          leaving the house. Even now you can also buy fresh fruit online!
+          Online fruit shopping, of course, must be in a trusted place. You
+          don't need to have a hard time finding the nearest online fruit shop
+          because in the HappyFresh app there are various well-known
+          supermarkets with the best quality fresh fruit. Come on, check out the
+          advantages of online fruit shopping in the HappyFresh app below.
+        </p>
+      </div>
+      <div class="our-package" id="targetOurPackage">
+        <p class="title">OUR PACKAGE</p>
+      </div>
+      <!-- benefit  -->
+      <div class="wrapper">
+        <div class="wrap">
+          <div class="card-2">
+            <div class="row gap-30">
+              <i class="fa-solid fa-pepper-hot icons"></i>
+              <p class="text-1">Fresh Vegetable</p>
+            </div>
+            <p class="text-2">
+              Fresh vegetables straight from the best agricultural sources
+            </p>
+          </div>
+          <div class="card-2">
+            <div class="row gap-30">
+              <i class="fa-solid fa-apple-whole icons"></i>
+              <p class="text-1">Fresh Fruit</p>
+            </div>
+            <p class="text-2">
+              Fruit with the best quality from local or imported and attractive
+              prices
+            </p>
+          </div>
+          <div class="card-2">
+            <div class="row gap-30">
+              <i class="fa-solid fa-truck-fast"></i>
+              <p class="text-1">Instant Delivery</p>
+            </div>
+            <p class="text-2">
+              Sent instantly by couriers who have been trained with SOPs to
+              maintain your shopping conditions
+            </p>
+          </div>
+          <div class="card-2">
+            <div class="row gap-30">
+              <i class="fa-solid fa-mortar-pestle"></i>
+              <p class="text-1">Kitchen ingredient</p>
+            </div>
+            <p class="text-2">
+              Complete kitchen ingredients for your cooking needs
+            </p>
+          </div>
+          <div class="card-2">
+            <div class="row gap-30">
+              <i class="fa-solid fa-kitchen-set"></i>
+              <p class="text-1">Kitchen Set</p>
+            </div>
+            <p class="text-2">All kinds of cooking tools to help you cook</p>
+          </div>
+          <div class="card-2">
+            <div class="row gap-30">
+              <i class="fa-solid fa-clipboard"></i>
+              <p class="text-1">Bunding Set</p>
+            </div>
+            <p class="text-2">
+              Confused what to cook? Packages are available for you to cook in
+              your kitchen
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <!-- persuasif- for buy  -->
+      <div class="wrapper">
+        <div class="discount gap-10">
+          <p class="desc">DISCOUNT</p>
+          <p class="title">ONLY FOR TODAY</p>
+          <p class="desc" id="targetCallUs">
+            Get it right now the item you want
+          </p>
+          <button class="btn-green text-1" onclick="callUs()">CALL US</button>
+        </div>
+      </div>
+
+      <hr />
+      <!-- footer  -->
+      <footer>
+        <div class="wrapper footer">&copy Mini Course RevoU - Dani Ramdani</div>
+      </footer>
+    </div>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
